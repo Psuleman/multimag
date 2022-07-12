@@ -1,0 +1,105 @@
+.nav-produit{
+	>ul{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 20px;
+		border-bottom: solid green 2px;
+		>li{
+			cursor: pointer;
+			text-decoration: none;
+			list-style: none;
+		}
+		>li:hover, li:focus, li:active{
+			font-weight: bold;
+		}
+	}
+}
+
+
+.label_value{
+		display: flex;
+		flex-direction: row;
+		/*width: 400px;
+		max-width: 600px;*/
+		padding: 10px;
+		margin: auto;
+		}
+.information, .description, .caracteristique
+{
+.label_value{
+		>div:nth-child(1){
+			width: 50%;
+			text-align: right;
+			font-weight: bold;
+
+		}		
+		>div:nth-child(2n){
+			width: 50%;
+			text-align: left;
+			margin-left: 10px;
+
+		}
+
+	}
+}/*
+.caracteristique, .description{
+	margin: auto;
+	>.label_value{
+
+		>div{
+			width: 30%;
+		>div:nth-child(1){
+			text-align: right;
+		}
+
+			>select, input, textArea{
+				width: 250px;
+			}
+		}
+
+	}
+}*/
+
+.align-btn{
+	display: flex;
+	margin-top: 20px;
+}
+
+.header-produit{
+	min-height: 100px;
+}
+
+.imgContent{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	.imgList{
+		width: 260px;
+		height: auto;
+		margin-left: 30px;
+		margin-bottom: 30px;
+		>img{
+			width: 255px;
+			height: auto;
+
+		}
+	}
+}
+
+.information,
+.description,
+.caracteristique,
+.image{
+	>h4{
+		text-align: center;
+		font-weight: bolder;
+		color: green;
+	}
+}
+
+
+.item{
+	cursor: pointer;
+	border: solid grey 1px;
+}

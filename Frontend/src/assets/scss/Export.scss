@@ -1,0 +1,42 @@
+$table-header: #1976D2;
+$table-header-border: #1565C0;
+$table-border: #d9d9d9;
+.table{
+
+    .tr{
+        display: flex;
+        .th, .td{
+            border: solid black 1px;
+            height: 100px;
+            width: 150px;
+
+        }
+        .td{
+
+        }
+        .th{
+
+        }
+    }
+}
+
+.table, .tr, .th, .td{
+    //box-sizing: border-box;
+}
+.first{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#plageDate{
+    >form{
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        margin-bottom: 20px;
+        >div{
+            margin-right: 30px;
+        }   
+    }
+
+}

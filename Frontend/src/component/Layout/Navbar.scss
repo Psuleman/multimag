@@ -1,0 +1,47 @@
+.navbarLink{
+	border-bottom : 1px solid grey;
+	padding:  20px;
+	background-color: #588157;
+	color: white;
+	opacity: 1;
+	display: flex;
+	justify-content: space-between;
+	/*position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;*/
+
+	height: 100px;
+	margin-bottom: 20px;
+	>div>span{
+		margin-right: 30px;
+		font-size: 1.5em;
+		font-weight: bolder;
+	}
+
+	>div>.link-navbar{
+		margin-right: 30px;
+		font-weight: bold;
+		text-decoration: none;
+		text-align: center;
+		color: white;
+	}
+
+	>div>.link-navbar:hover{
+		border: 4px white solid;
+		background-color: white;
+		color: #588157;
+	}
+	>div>.link-navbar:active, .link-navbar:focus{
+		border: 4px white solid;
+		background-color: white;
+		color: #588157;
+	}
+
+	.logo{
+		width: 55px;
+		height: auto;
+		margin-bottom: 30px;
+	}
+
+}

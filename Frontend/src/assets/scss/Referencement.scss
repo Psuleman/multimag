@@ -1,0 +1,68 @@
+.layout-referencement{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+	>.recherche-filtre{
+		min-width: 300px;
+		max-width: 100%;
+		width: 25%;
+		border: solid #fefae0 2px;
+		background-color: #e5e5e5;
+		border-radius: 15px;
+		padding: 10px;
+		margin-top : 20px;
+		margin-left: 20px;
+		padding: 30px;
+
+	}
+
+	>.produit{
+		max-width: 100%;
+		width: 70%;
+		border: solid #fefae0 2px;
+		background-color: #e5e5e5;
+		border-radius: 15px;
+		padding: 10px;
+		margin-top : 20px;
+		margin-right: 20px;
+		padding: 30px;
+	}
+}
+
+.univers-item, .filtre{
+	margin-top: 30px;
+
+	>h3{
+		font-weight: 100px;
+	}
+
+
+input[type="radio"]{
+	margin-right: 10px;
+}
+}
+
+input[type="radio"]::before{
+	margin-right: 10px;
+}
+
+.btn{
+	background-color: #588157;
+	border-radius: 20px;
+	margin-left: 15px;
+	color: #FFF;
+	font-weight: bolder;
+}
+.btn:hover{
+	background-color: #FFF;
+	border: solid 2px #588157;
+	border-radius: 20px;
+	margin-left: 15px;
+	color: #588157;
+	font-weight: bolder;
+}
+.recherche{
+	height: 100px;
+}

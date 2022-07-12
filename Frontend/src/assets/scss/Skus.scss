@@ -1,0 +1,76 @@
+.skus{
+	
+
+
+	padding: 10px;
+	>h2, h5{
+		text-align: center;
+		font-weight: bolder;
+		margin-bottom: 20px;
+	}
+}
+.listSkus{
+	border: 1px solid black;
+	width: 80%;
+	margin: auto;
+	
+	&tr, td, th{
+		border: 1px solid black;
+		text-align: center;
+		padding: 10px;
+	}
+	
+
+	
+
+}
+
+.img_miniature{
+	width: 50px;
+	height: auto;
+	cursor: pointer;
+}
+/**
+
+position: static;
+position: relative;
+position: absolute;
+position: fixed;
+position: sticky;
+
+*/
+
+
+.recherche{
+	form{
+		margin: auto;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		width: 350px;
+		div{
+			margin-top: 25px;
+			//border : 2px solid #ccc;
+			width: 250px;
+			margin: auto;
+			margin-top: 20px;
+	
+			label{
+				text-align: left;
+				font-weight: bolder;
+				margin-bottom: 10px;
+			}
+	
+			input{
+		
+			}
+	
+			button{
+				border-radius: 5px;
+				padding: 10px;
+				padding-left: 25px;
+				padding-right: 25px;
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
