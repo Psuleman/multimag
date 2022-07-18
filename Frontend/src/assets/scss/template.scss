@@ -1,0 +1,204 @@
+@import 'variable.scss';
+@import 'option.scss';
+
+body{
+	background: $gris;
+}
+
+#template{
+	background: $gris;
+
+	>#navbar-horizontale{
+		background: $blanc;
+		/*border: solid black 1px;*/
+		height: $hauteur_header;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding-right: 2%;
+
+		#title-menu{
+			width: 25%;
+		}
+		#sidebar{
+			width: 75%;
+			padding-left: 5%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+
+			>section{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+
+				#avatar{
+					width: 40px;
+					border-radius: 50%;
+					background: $vert;
+					color:  blanc;
+					margin-right: 10px;
+
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+
+				button, #avatar, input, label{
+					height: 40px;
+					margin-top:  10px;
+				}
+
+			}
+		}
+	}
+
+
+
+	>#navbar-verticale{
+		background: $vert;
+		color: $blanc;
+		border:  solid black 1px;
+		width: $width_nav_vertical;
+		height: 100vh;
+
+		position: fixed;
+		top: 0;
+		left: 0;
+
+		h4{
+			font-size: 1.05rem;
+		}
+
+		>header{
+			height: $hauteur_header;
+			margin-bottom: 20px;
+
+			display: flex;
+			align-items: center;
+			padding-left: 2%;
+			>h1{
+				font-size: 1.5rem;
+				font-weight: bold;
+				text-align: Left;
+				width: calc(100% - (40px / 2) - 4%);
+			}
+
+		}
+		#eclipse-navbar-verticale{
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			background: $blanc;
+			border: #grisDa solid 1px; 
+
+			position : fixed;
+			top: calc(($hauteur_header - 40px) / 2);
+			left: calc($width_nav_vertical - (40px / 2));
+		}
+
+		#align-navbar{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;	
+			height: calc(100vh - $hauteur_header - 20px);
+			>div{
+				>nav{
+					margin-bottom: 1.5%;
+					padding: 3%;
+					>ul{
+						padding-left: 5%;
+
+						>li{
+							list-style: none;
+							padding-right: 3%;
+
+							>ul{
+								padding: 0;
+								>li{
+									margin-left: 15%;
+								}
+							}
+
+							.link-navbar{
+								color: $blanc;
+								text-decoration: none;
+								display: block;
+								padding:  2%;
+								padding-left: 2%;
+								padding-right: 2%;
+							}
+
+							.link-navbar:hover, .link-navbar:focus, .link-navbar:active{
+								color: $vert;
+								background: $gris;
+							}
+
+							
+						}
+
+						>.display-nav{
+							display: flex;
+							flex-direction: row;
+							justify-content: space-between;
+							padding-right: 3%;
+
+							>div{
+								border-radius: 10px;
+								font-size: 0.8rem;
+								background: red;
+								line-height: 100%;
+								padding: 2%;
+								margin: 3%;
+							}
+						}
+					}
+				}
+
+				>aside{
+					padding: 3%;
+
+					>div{
+						display: flex;
+						flex-direction: column;
+						padding: 2%;
+
+						>label{
+							margin-bottom: 3%;
+						}
+					}
+				}				
+			}
+
+
+			>footer{
+				border-top:  solid $gris 1px;
+
+				padding: 6%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				font-size: $fs_footer;
+			}
+	}
+	}
+
+	>#container{
+		background: $blanc;
+		position: fixed;
+		top:  $hauteur_header;
+		left: $width_nav_vertical;
+		margin: $margin_container;
+		width: calc(100% - $width_nav_vertical - ($margin_container * 2));
+		height: calc(100vh - $hauteur_header - 10px);
+		padding: $padding_container;
+		padding-right: 2%;
+	}
+}
+
+h2{
+	text-align: center;
+	color: $vert;
+	margin-bottom: 30px;
+}

@@ -1,0 +1,13 @@
+.option{
+	display: flex;
+	flex-wrap: wrap;
+
+	div{
+		margin-right: 3%;
+		display: flex;
+		>label{
+			margin: 10px;
+		}
+	}
+
+}

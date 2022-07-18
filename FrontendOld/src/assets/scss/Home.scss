@@ -1,0 +1,45 @@
+.home{
+form{
+	border : 2px solid #ccc;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 350px;
+	div{
+		margin-top: 25px;
+		//border : 2px solid #ccc;
+		width: 250px;
+		margin: auto;
+		margin-top: 20px;
+
+		label{
+			text-align: left;
+			font-weight: bolder;
+			margin-bottom: 10px;
+		}
+
+		input{
+	
+		}
+
+		button{
+			border-radius: 5px;
+			padding: 10px;
+			padding-left: 25px;
+			padding-right: 25px;
+			margin-bottom: 20px;
+		}
+	}
+}}
+
+.formHome{
+	border : 2px solid #ccc;
+	width: 600px;
+	padding: 30px;
+	margin: auto;
+	
+	h2{
+		text-align: center;
+	}
+}
+

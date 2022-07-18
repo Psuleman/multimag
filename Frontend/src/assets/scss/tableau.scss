@@ -1,0 +1,52 @@
+@import 'variable.scss';
+
+table{
+	border : solid black 1px;
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	thead{
+		background: $gris;
+
+	}
+
+	tbody{
+
+	}
+
+	tr, td, th{
+		border: solid black 1px;
+	}
+	td, th{
+		padding: 10px;
+	}
+
+	tfoot{
+		
+	}
+
+	button{
+		border: $vert solid 1px;
+		border-radius: 5%;
+		background: $gris;
+		margin-left: 5%;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	button:first{
+		margin-left: 0;
+	}
+
+
+	button:hover{
+		border-radius: 5%;
+		background: $vert;
+		color: $blanc;
+	}
+	.img_miniature{
+		width: 50px;
+		height: auto;
+		cursor: pointer;
+	}
+}
