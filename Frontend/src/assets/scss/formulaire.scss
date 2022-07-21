@@ -1,0 +1,91 @@
+@import 'variable.scss';
+
+.form{
+	/*display: flex;*/
+	height: calc(100vh - $hauteur_header - ($padding_container * 2) - ($margin_container *2 )) ;
+	
+		form, .formulaire{
+			padding: 10px;
+			max-width: 50%;
+			min-width: 30%;
+			margin: auto;
+			border: solid 1px $gris;
+
+
+			small{
+				color : red;
+				font-size: 0.80rem;
+				display: block;
+				text-align: center;
+			}
+
+			div{
+				display: flex;
+				flex-direction: column;
+				margin: 15px;
+				.filtreListe{
+					margin: 0;
+					border: $vert solid 1px;
+					.item{
+						margin: 0;
+						border: 0;
+						border-bottom: 1px solid $gris;
+						padding: 1%;
+						cursor: pointer;
+					}
+					.item:hover{
+						background-color: $gris;
+						margin: 0;
+						padding: 1%;
+						cursor: pointer;
+					}					
+				}
+
+
+			}
+
+			input, textArea{
+				background: $gris;
+			}
+			#btn_form_produit{
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+			}
+			.btn_input{
+				display: flex;
+				flex-direction: row;
+				padding-bottom: 0;
+				margin-bottom: 0;
+				margin-left: 0;
+				>button{
+					margin-right: 2%;
+				}
+			}
+			.matiere_pourcentage{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				>div:first-child{
+					width: 70%;
+					margin-left: 2%;
+				}
+			}
+
+		}		
+	
+}
+
+.successMessage, .echecMessage{
+	color: $blanc;
+	text-align: center;
+	padding: 2%;
+}
+.successMessage{
+	background-color: green;
+}
+
+.echecMessage{
+	background-color: red;
+}
+

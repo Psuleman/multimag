@@ -1,0 +1,19 @@
+@import 'variable.scss';
+
+.notification{
+	border-bottom: solid $gris 1px;
+	padding:  10px 0 10px 0; /*haut droite bas gauche*/
+	text-align: justify;
+
+	header{
+		font-weight: bold;
+	}
+
+	em{
+		color: $vert;
+	}
+}
+
+.notification:last-child{
+	border-bottom: none;
+}
